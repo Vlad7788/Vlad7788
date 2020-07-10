@@ -76,7 +76,7 @@ body{
     margin-top: 5px;
     width: 200px;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.75);
     color:#2c71b8 ;
     border: 1px solid  #2c71b8 ; 
     padding: 4px;
@@ -99,4 +99,59 @@ body{
     line-height: 50px;
 }
 
+.submenu{
+    display: none;
+}
 
+.main{
+    margin: 0; /* Убираем отступы */ }
+   .sidebar, .content { 
+    position: absolute; /* Абсолютное позиционирование */
+    overflow: auto; /* Полосы прокрутки при необходимости */
+    padding: 10px; /* Поля вокруг текста */
+    top: 500px; /* Расстояние от верхнего края */
+    border-top: 1px solid white;
+
+   }
+
+   .sidebar { 
+    width: 270px; /* Ширина */
+    left: 375px;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    border-right: 1px solid #231F20; /* Линия справа */
+   }
+   .content {
+    left: 675px;
+   }
+
+   h2{
+       font-size: 24px;
+       color: white;
+   }
+
+   .col{
+       width: 270px;
+       height: 650px;
+       margin: 15px;
+       background-color: rgba(255, 255, 255, 0.15);
+       float: left;
+   }
+   
+   .row1:after{
+    clear: both;
+    display: block;
+    content: "";
+   }
+
+ 
+
+   
+   .mini-col{
+    width: 270px;
+    height: 180px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.25);
+   }
+
+   
